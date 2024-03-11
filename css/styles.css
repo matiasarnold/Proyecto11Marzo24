@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Aspectos generales*/
+.container {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido p {
+  line-height: 1.5;
+  color: gray;
+}
+
+.card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/*FONTS*/
+@font-face {
+  font-family: "couture-bld.otf";
+  src: url(../fonts/couture-bld.otf);
+  font-family: "JAi_____";
+  src: url(../fonts/JAi_____.TTF);
+}
+h1 {
+  font-family: "couture-bld.otf";
+  color: #e61c26;
+}
+
+h2 {
+  color: #e61c26;
+}
+
+h3 {
+  font-family: "JAi_____";
+  color: #e61c26;
+}
+
+fieldset {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+legend {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+ul div {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*PARA QUE NO SE DISTORCIONE LA IMAGEN*/
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*Display*/
+.menu-nav li {
+  display: inline;
+  margin-right: 40px;
+}
+
+/*HEADER*/
+header {
+  background-color: #242424;
+  grid-area: header;
+}
+
+/*MAIN*/
+main {
+  grid-area: main;
+}
+
+/*FOOTER*/
+footer {
+  grid-area: footer;
+  padding: 40px;
+  color: white;
+  background-color: #8d0f01;
+}
+
+/*BODY*/
+.gradiante {
+  background: linear-gradient(#8d0f01, #0c1b27, #010407);
+  width: 100%;
+  height: 100%;
+}
+
+/*ACA EMPIEZA GRID*/
+body {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
